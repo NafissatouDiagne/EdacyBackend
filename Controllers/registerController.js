@@ -36,3 +36,10 @@ res.json({
     token,
 });
 };
+
+exports.user = async(req,res)=>{
+    const user= await User.find()
+    res.json({
+        user
+    })
+}
